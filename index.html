@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <h2>ثبت نام سایت</h2>
+      </div>
+
+      <div id="sign-form">
+        <form action="post" id="form" onsubmit=" return finalCheck()">
+          <h2>فرم ثبت نام</h2>
+
+          <div class="form-row">
+            <div>
+              <i class="fa-solid fa-user" id="first-name-logo"></i>
+              <input
+                type="text"
+                name="firstName"
+                id="first-name"
+                placeholder="    نام"
+                class="box-type"
+                pattern="[A-Za-zا-ی]{3,}"
+                required
+              />
+              <hr id="first-name-underline" />
+            </div>
+
+            <div>
+              <i class="fa-regular fa-user" id="last-name-logo"></i
+              ><input
+                type="text"
+                name="lastName"
+                id="last-name"
+                placeholder="    نام خانوادگی"
+                class="box-type"
+                pattern="[A-Za-zا-ی]{3,}"
+                required
+              />
+              <hr id="last-name-underline" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div>
+              <i class="fa-solid fa-square-phone" id="phone-logo"></i>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="    تلفن"
+                class="box-type"
+                pattern="[9-0]{11,}"
+                maxlength="11"
+                minlength="11"
+                required
+              />
+              <hr id="phone-underline" />
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope" id="email-logo"></i
+              ><input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="    ایمیل"
+                class="box-type"
+                required
+              />
+              <hr id="email-underline" />
+            </div>
+          </div>
+
+          <div id="birth-row">
+            <label for="birthday"> تاریخ تولد :</label>
+            <input
+              type="date"
+              name="birthday"
+              id="birthday"
+              class="box-type"
+              max="2005-01-01"
+              min="1950-01-01"
+              value="2023-01-01"
+              required
+            />
+            <hr id="birthday-underline" />
+          </div>
+
+          <div class="password-row">
+            <i class="fa-solid fa-unlock-keyhole" id="password-logo"></i>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              pattern=".{8,}"
+              placeholder="    رمز عبور"
+              class="box-type"
+              required
+            />
+            <hr id="password-underline" />
+          </div>
+
+          <div class="password-row">
+            <i class="fa-solid fa-lock" id="password-confirm-logo"></i
+            ><input
+              type="password"
+              name="passwordConfirm"
+              id="password-confirm"
+              pattern=".{8,}"
+              placeholder="    تکرار رمز عبور"
+              class="box-type"
+              required
+            />
+            <hr id="password-confirm-underline" />
+          </div>
+
+          <div id="agreement-row">
+            <input
+              type="checkbox"
+              name="agreement"
+              id="agreement-box"
+              required
+            />
+            <label for="agreement-box" id="agreement-box-label"
+              >موافقت با همه ی
+              <a href="./index2.html">قوانین و مقررات</a></label
+            >
+          </div>
+          <input type="submit" value="ارسال" id="submit-butt" />
+        </form>
+        <img src="./assets/pic/pic1.webp" alt="" srcset="" id="form-pic" />
+      </div>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

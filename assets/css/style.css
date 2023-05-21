@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: yekan;
+  src: url(../font/Yekan.ttf);
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  font-family: yekan;
+  direction: rtl;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header {
+  width: 100%;
+  height: 9%;
+  background-color: #bfeaf5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sign-form {
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#form {
+  width: 50%;
+  height: 100%;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#form hr {
+  border: 1px solid gray;
+  box-shadow: 0 1px 5px grey;
+}
+#form input::placeholder {
+  color: darkgrey;
+}
+#form-pic {
+  width: 45%;
+  height: 90%;
+}
+.form-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+i {
+  margin-left: 5px;
+}
+.form-row div {
+  width: 47%;
+}
+.form-row div input {
+  width: 80%;
+}
+
+#birth-row label {
+  font-weight: bold;
+  color: darkgrey;
+  margin-left: 20px;
+}
+
+.box-type {
+  border: none;
+  outline: none;
+  background-color: white;
+  font-weight: bold;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -webkit-moz-appearance: textfield;
+}
+#submit-butt {
+  width: 20%;
+  height: 10%;
+  color: white;
+  font-size: larger;
+  background-color: #144272;
+  border: 1px solid #205295;
+  border-radius: 5px;
+  align-self: flex-end;
+  box-shadow: 2px 2px 3px grey;
+}
+#submit-butt:hover {
+  background-color: #4b56d2;
+  transition-duration: 500ms;
+  box-shadow: 0 0 10px grey;
+}
+
+#agreement-box-label a {
+  text-decoration: none;
+}
+#agreement-box-label a:hover {
+  color: green;
+  text-decoration: underline;
+}
+#agreement-box-label {
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  #form-pic {
+    display: none;
+  }
+  #sign-form {
+    width: 84%;
+    height: 80%;
+    margin-bottom: 25px;
+  }
+
+  #form {
+    width: 100%;
+    padding: 16px 20px;
+  }
+  #form h2 {
+    align-self: center;
+  }
+  .form-row {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .form-row div {
+    margin-top: 15px;
+    width: 100%;
+  }
+  .form-row div input {
+    width: 70%;
+  }
+  #birth-row {
+    margin-top: 15px;
+    width: 100%;
+  }
+  #birth-row label {
+    margin-left: 5px;
+  }
+
+  .password-row {
+    margin-top: 15px;
+    width: 100%;
+  }
+  .password-row input {
+    width: 90%;
+  }
+
+  #agreement-row {
+    width: 100%;
+    margin-top: 15px;
+  }
+  #submit-butt {
+    width: 60px;
+    height: 35px;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 700px) {
+  #sign-form {
+    width: 90%;
+    height: 80%;
+  }
+  #form {
+    width: 55%;
+  }
+  .form-row {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .form-row div {
+    margin-top: 15px;
+    width: 100%;
+  }
+  .form-row div input {
+    width: 90%;
+  }
+  #birth-row {
+    margin-top: 15px;
+    width: 100%;
+  }
+  #birth-row label {
+    margin-left: 5px;
+  }
+
+  .password-row {
+    margin-top: 15px;
+    width: 100%;
+  }
+  .password-row input {
+    width: 90%;
+  }
+
+  #agreement-row {
+    width: 100%;
+    margin-top: 15px;
+  }
+  #submit-butt {
+    width: 60px;
+    height: 35px;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1024px) {
+  #sign-form {
+    width: 90%;
+  }
+  #form {
+    width: 55%;
+  }
+
+  .form-row input {
+    width: 80%;
+  }
+}
